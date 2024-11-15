@@ -1,0 +1,425 @@
+/* Mobile screen */
+/* Mobile Responsive CSS for screens between 320px and 465px */
+@media (min-width: 320px) and (max-width: 479px) {
+    p.notify-icon{
+        display: none;
+    }
+    p.icon{
+visibility: visible;
+    }
+    /* Hide Navigation Center */
+    .nav-center {
+        display: none;
+    }
+    #hero-content
+    {
+        height:55vh;
+    }
+
+    /* Hero Banner Positioning */
+    .hero-banner
+    {
+        position: relative;
+        top: -20px;
+    }
+
+    /* Title Styles */
+    .title {
+        font-size: 18px;
+    }
+
+    /* Content Body Font Size */
+    .content-body {
+        font-size: 8px;
+    }
+
+    /* Features Section */
+    #features {
+        padding: 0;
+    }
+
+    .feature-title {
+        font-size: 18px;
+    }
+
+    .feature-content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .feature-card {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        box-shadow: none;
+    }
+
+    .feature-subtitle {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .card-title {
+        font-size: 20px;
+    }
+
+    /* Card Layout */
+    .card {
+        width: 100%;
+        height: inherit;
+    }
+
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        padding:0px;
+    }
+   .card-overlay
+   {
+    bottom:20px;
+    box-sizing: border-box;
+   }
+
+    .card-subtitle {
+        font-size: 20px;
+    }
+    .card-img{
+        width:100%;
+        height: inherit;
+    }
+    .card-txt {
+        font-size:14px;
+        text-align: justify;
+        padding:15px;
+    }
+ .card:hover .card-overlay
+ {
+    width:100%;
+    height:100%;
+    background: none;
+    box-sizing: border-box;
+ }
+    /* FAQ Section */
+    #faq {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        margin: 0px;
+
+    }
+
+    .faq-title {
+        font-size: 18px;
+    }
+
+    .faq-subtitle, .faq-body {
+        display: none;
+    }
+
+    .faq-card2 {
+        margin-left: 0;
+    }
+
+    .faq-question-card
+     {
+    
+        padding:0px;
+        background: none;
+    }
+
+    .faq-question {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .ques-box, .ans-box {
+        gap: 20px;
+    }
+
+    .far-answer {
+        font-size: 14px;
+        text-align:center;
+    }
+
+    /* Contact Us Section */
+    #contact-us {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    
+    }
+
+    .contact-card1 {
+       padding-bottom: 20px;
+       text-align: center;
+    }
+
+    .contactCard-title {
+        font-size: 16px;
+    }
+
+    .contactCard-body {
+        font-size: 10px;
+    }
+
+    .contact-card2 {
+        display: none;
+    }
+
+    .contact-btn {
+        padding: 8px 12px;
+        font-size: 10px;
+        align-items: center;
+    }
+
+    /* Footer Section */
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        margin: 0px;
+        gap:0px;
+    }
+    
+
+    .logo {
+        font-size: 16px;
+    }
+
+    .footer-body {
+        font-size: 10px;
+    }
+    .footer-title
+    {
+        font-size: 18px;
+    }
+    .footer-link
+    {
+        color:var(--primary-color)
+    }
+    .footer-email,.footer-phno
+    {
+        font-size: 14px;
+    }
+    .social-links
+    {
+        color:var(--primary-color)
+    }
+}
+
+/* Tablet */
+@media (min-width:479px) and (max-width:768px)
+{
+.nav-center
+{
+    display:none;
+}
+.notify-icon
+{
+    display:none;
+}
+.icon 
+{
+    visibility: visible;
+}
+#hero-content
+{
+    height:100%;
+    padding:0px;
+}
+.hero-banner
+{  top:-30px;
+   padding:40px;
+}
+.title
+{
+    font:16px;
+}
+.content-body
+{
+    font-size: 13px;
+}
+#features
+{
+    padding:0px;
+}
+.feature-title 
+{
+    font-size:30px;
+}
+.feature-content
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:flex-start;
+    gap:20px;
+    min-height: calc(30%-10px);
+    flex-wrap: wrap;
+}
+.feature-card
+{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+    width: 125px;
+    height:180px;
+    padding:8px;
+    border:2px solid #fff;
+    box-shadow:none;
+    flex-wrap: wrap;
+}
+.feature-icon
+{
+    font-size: 24px;
+}
+.feature-subtitle{
+    font-size: 12px;
+}
+.card-title
+{
+    font-size:28px;
+}
+.card-container{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: wrap;
+    padding:0;
+}
+.card{
+    width:220px;
+    height:195px;
+}
+.card-overlay
+{
+    width:100%;
+}
+.card-subtitle
+{
+    font-size: 20px;
+}
+.card-txt{
+    font-size:7px;
+    padding:2px;
+}
+.card:hover .card-overlay
+{
+    width:100%;
+    height:140px;
+}
+#faq
+{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:0;
+    margin:0;
+
+}
+.faq-title
+{
+    font-size: 24px;
+}
+.faq-subtitle,.faq-body{
+    display:none;
+}
+.faq-question-card
+{
+    flex-direction: column;
+    padding:10px;
+    margin:20px;
+}
+.contact-card1
+{
+    margin:40px 20px;
+}
+.contact-card2
+{
+    margin-top: 34px;
+}
+.ContactCard-img
+{
+    width:100%;
+    height:180px;
+}
+.contactCard-title
+{
+    font-size:20px;
+}
+.contact-btn
+{
+    padding:9px 182px;
+}
+.footer-content
+{
+    margin-top:0px;
+    gap:20px;
+}
+}
+/* laptop */
+@media(min-width:768px) and (max-width:1024px)
+{
+    .nav-center
+    {
+        left:220px;
+    }
+    #hero-content
+    {
+        height:100vh;
+        padding:40px 0px;
+        
+    }
+    .hero-banner
+    {
+        top:-2px;
+    }
+    .title
+    {
+        font-size:26px;
+    }
+    .content-body
+    {
+        font-size: 14px;
+    }
+    #cards
+    {
+        padding:35px;
+    }
+    .card-img{
+        width:280px;
+    }
+   
+    .faq-subtitle,.faq-body{
+        display:none;
+    }
+    .faq-card1
+    {
+        margin:0px;
+    }
+    .faq-card2
+    {
+        margin:0px;
+    }
+    .contact-card1
+    {
+        margin-top:60px;
+    }
+    .ContactCard-img
+    {
+        width:100%;
+    }
+    .contact-btn 
+    {
+        padding:12px 238px;
+    }
+}
