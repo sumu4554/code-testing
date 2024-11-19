@@ -13,59 +13,83 @@
 <body>
     <!-- headerContainer starts here -->
     <section id="header">
-        <div class="navbar">
+        <nav class="navbar">
             <div class="nav-left">
                 <h1 class="brand">Logo</h1>
             </div>
             <div class="nav-center">
                 <ul class="nav-links">
                     <a href="" >Home</a >
-                    <a href="">About us</a>
+                    <a href="#aboutUs">About us</a>
                     <a href="#features">Our Services</a>
                     <a href="#cards">what we offer</a>
-                    <a href="#contactus">Contact us</a>
+                    <a href="#contact-us">Contact us</a>
                 </ul>
             </div>
-            <div class="nav-right">
+            <div class="nav-right" id="mobile-menu">
                 <p class="notify-icon"><i class="fa-regular fa-bell fa-2xl"></i></p>
-                <p class="icon"><i class="fa-solid fa-bars fa-xl "></i></p>
+                <p class="menu-icon" ><i class="fa-solid fa-bars fa-xl "></i></p>
             </div> 
 
-        </div>
+        </nav>
        
     </section>
     <!-- headerEndsHere -->
+    
+
+     </section>
      <section id="hero-content">
         <div class="hero-banner">
             <h2 class="title">Sanjit Tech Solution</h2>
            <p class="content-body">Custom App, Website & Software Solutions Built for Your Business</p>
 
         </div>
-        <!-- <div class="hero-img">
-            <img src="data:image/jpeg;base64,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" alt="image" class="image">
+        <div class="hero-img">
+            <img src=".//assets/images/hero-banner.png" alt="image" class="hero-image">
         </div>
-         -->
+        
         
      </section>
     
     <!-- heroContainer ends Here -->
+    <section id="aboutUs">
+        <h2 class="aboutUs-title">About us</h2>
+        <div class="about-us">
+            <div class="aboutUs-content">
+                <p>Looking for reliable, innovative software solutions to accelerate your business? Sanjit Tech Solutions Pvt. Ltd. builds custom, scalable software tailored to each client’s unique needs. With years of expertise in software development, website solutions, app creation, and AI-powered projects, we’re committed to empowering your business with top-tier technology solutions.</p>
+
+            </div>
+            <div class="aboutUs-img">
+                <img src="./assets/images/image-removebg-preview.png" alt="" class="aboutUs-image">
+
+            </div>
+        </div>
      <!-- featuresContent starts here -->
      <section id="features">
         <h2 class="feature-title">Our Services</h2>
-        <div class="feature-content">
-            <div class="feature-card">
+        <div class="feature-content ">
+            <div class="feature-card ">
                 <h1 class="feature-icon"><i class="fa-solid fa-mobile-screen fa-2xl"></i></h1>
                 <h3 class="feature-subtitle">App Development</h3>
+                 
                 
             </div>
             <div class="feature-card">
                 <h1 class="feature-icon"><i class="fa-solid fa-tv fa-2xl"></i></h1>
                 <h3 class="feature-subtitle">Sotware development</h3>
+                
             </div>
             <div class="feature-card">
                 <h1 class="feature-icon"><i class="fa-solid fa-database fa-2xl"></i></h1>
                 <h3 class="feature-subtitle">Database</h3>
+                
             </div>
+            <div class="feature-card">
+                <h1 class="feature-icon"><i class="fa-solid fa-robot fa-4x1"></i></h1>
+                <h3 class="feature-subtitle">AI projects</h3>
+                
+            </div>
+           
            
         </div>
 
@@ -79,16 +103,16 @@
                 <img src="https://media.istockphoto.com/id/1334591614/photo/man-using-digital-tablet-online-connect-to-internet-banking-currency-exchange-online-shopping.jpg?s=612x612&w=0&k=20&c=nejA5SuHcN2fAdO7Bkaf9pJrwzyLPBCyOLZgMaslGko=" class="card-img"  alt="card-1">
                 
              <div class="card-overlay">
-                    <h3 class="card-subtitle">We Develop Your Solution</h3>
-                    <p class="card-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda sequi, esse atque aspernatur quidem accusamus omnis in ab necessitatibus nostrum nemo eveniet saepe molestiae.</p>
+                    <h3 class="card-subtitle">Develop and Deliver</h3>
+                    <p class="card-txt">Our team of experts creates a custom app, website, or software solution with the highest standards</p>
             </div>
                 
             </div>
             <div class="card">
                 <img src="https://media.istockphoto.com/id/1306526412/photo/men-working-in-laptop-at-office.jpg?s=612x612&w=0&k=20&c=oWhBRc0vw3yWRbq1UubIEzPD90tpvpjM4zHVJLtfV0k=" alt="card-img" class="card-img">
              <div class="card-overlay">
-                <h3 class="card-subtitle">Share Your Goals</h3>
-                <p class="card-txt">Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quisquam ea dolore quas modi corrupti. Quidem, ad odio libero corrupti perferendis voluptates.
+                <h3 class="card-subtitle">Ongoing Support and Optimizati</h3>
+                <p class="card-txt">After launch, we offer support and updates to keep everything running smoothly.
                 </p>
 
              </div>
@@ -98,8 +122,8 @@
             <div class="card">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3w5OEYFMXRefKhcn_sMW_wbv8XJ-bCD5vKqipExl2HxkTD7pJOni72l7e0f4l--t4Sus&usqp=CAU" alt="card-img" class="card-img">
              <div class="card-overlay">
-                <h3 class="card-subtitle">Support Beyond launch</h3>
-                <p class="card-txt">Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quisquam ea dolore quas modi corrupti. Quidem, ad odio libero corrupti perferendis voluptates.
+                <h3 class="card-subtitle">Define Your Goals</h3>
+                <p class="card-txt">We listen and understand your business needs, ensuring every solution aligns with your objectives
                 </p>
 
              </div>
@@ -111,44 +135,88 @@
         
         
      </section>
+
+
    <!-- How it works ends here   -->
+  
+    
     <!-- FrequentlyAskedQuestion start here -->
      <section id="faq">
         
-        <div class="faq-card1">
-            <h1 class="faq-title">Frequently Asked Questions?</h1>
-            <h2 class="faq-subtitle">Have Question?We Have Answers</h2>
-            <pre class="faq-body">Our Team Of Experts Ready To Help You Regarding Your queries</pre>
+         <h1 class="faq-title">Frequently Asked Questions?</h1>
 
-        </div>
-        <div class="faq-card2">
-            <div class="faq-question-card">
-                <div class="ques-box">
-                    <h3 class="faq-question">1.Why choose Sanjit Tech Soltion For App/Website Development?</h3>
-                    <i class="fa-solid fa-circle-plus "></i>
-               </div>
-               <div class="ans-box">
-                <p class="far-answer">We specialize in creating solutions that are 100% customized to meet your business goals, whether you need an engaging app, a responsive website, or powerful software.</p>
-                <i class="fa-solid fa-circle-minus"></i>
-               </div>
-              
-               
 
+       <div class="faq-card2">
+        <div class="accordian">
+            <div class="question">
+                <h4>Why choose Sanjit Tech Solution for app, website or software development?</h4>
+                <i class="icon fa-solid fa-caret-down"></i>
             </div>
+            <div class="answer">
+                <p>We specialize in creating solutions that are 100% customized to meet your business goals, whether you need an engaging app, a responsive website, or powerful software.</p>
+            </div>
+        </div>
+        <div class="accordian">
+            <div class="question">
+                <h4>How do our solution support business growth?</h4>
+                <i class="icon fa-solid fa-caret-down"></i>
+            </div>
+            <div class="answer">
+                <p>We design with scalability in mind, so your software, website, or app can evolve as your business grows.</p>
+            </div>
+        </div>
+        <div class="accordian">
+            <div class="question">
+                <h4>Can Sanjit Tech Solution build business for small businesses and enterprises?</h4>
+                <i class="icon fa-solid fa-caret-down"></i>
+            </div>
+            <div class="answer">
+                <p>Yes, we work with businesses of all sizes. Our custom solutions are designed to meet the needs of any organization, from startups needing a simple website to large enterprises looking for complex software systems.</p>
+            </div>
+        </div>
+        <div class="accordian">
+            <div class="question">
+                <h4>What is the process of creating a custom app or website with Sanjit Tech Solution?</h4>
+                <i class="icon fa-solid fa-caret-down"></i>
+            </div>
+            <div class="answer">
+                <p>Yes, we work with businesses of all sizes. Our custom solutions are designed to meet the needs of any organization, from startups needing a simple website to large enterprises looking for complex software systems.</p>
+            </div>
+        </div>
+
+       </div>
         </div>
      </section>
   <!-- FrequentlyAskedQuestions ends here    -->
    <!-- contactUS starts here -->
     <section id="contact-us">
-       <div class="contact-card1">
-         <h2 class="contactCard-title">Empowering Top Companies With Seamless Integration </h2>
-         <pre class="contactCard-body">Lorem ipsum dolor sit..</pre>
-         <a class="contact-btn"href="./contactus.html">Contact us</a>
-       </div>
-       <div class="contactus-card2">
-        <img src="https://st.depositphotos.com/3526225/4895/v/450/depositphotos_48956515-stock-illustration-seo-technology-flat-illustration.jpg" class="ContactCard-img">
-       </div>
-       
+        <div class="contact-left-title">
+            <h2>Lets Build The Perfect Solution For Bussiness</h2>
+        </div>
+        <div class="contact-container">
+            <form action="https://api.web3forms.com/submit" method="post" class="contact-left">
+               
+                <input type="hidden" name="access_key" value="c72abc73-7463-42b8-86eb-aa20d5ead509">
+                <div class="contact-names">
+                    <input type="name" placeholder="Your Firstname"  name="name" class="contact-inputs-name" required/>
+                    <input type="name" placeholder=" Your Lastname"  name="name" class="contact-inputs-name" required/>
+
+                </div>
+               
+                <input type="email" placeholder="Your Email" name="email" class="contact-inputs"/>
+                <input type="phone" placeholder="Your Number" name="Number" class="contact-inputs"/>
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <button type="submit" value="submit" class="contact-btn">Submit<i class="fa-solid fa-arrow-right"></i></button>
+        
+        
+             </form>
+             <div class="contact-right">
+                <img src="./assets/images/Contactus-img.png" alt="contact-image"/>
+        
+             </div>
+
+        </div>
+    
     </section>
   <!-- contactUs ends here   -->
    <!-- footer starts here -->
